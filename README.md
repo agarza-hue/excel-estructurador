@@ -83,3 +83,7 @@ cd backend && . .venv/bin/activate && python -m pytest -q
   el Parquet del raw landing nunca se borra.
 - El archivo subido se manda una sola vez (`/upload/analyze` devuelve `upload_id`);
   los pasos siguientes referencian ese id en lugar de reenviar el workbook.
+
+## Licencia
+
+[MIT](LICENSE) © agarza-hue
