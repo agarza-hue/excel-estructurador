@@ -6,6 +6,7 @@ dashboard → export → soft-delete revert, plus form validation.
 import os
 import tempfile
 import time
+from pathlib import Path
 
 import pytest
 
@@ -16,7 +17,7 @@ from fastapi.testclient import TestClient  # noqa: E402
 
 from app.main import app  # noqa: E402
 
-SAMPLE = "/root/excel_platform/scripts/sample_empresa.xlsx"
+SAMPLE = str(Path(__file__).parent / "fixtures" / "sample_empresa.xlsx")
 client = TestClient(app)
 
 VENTAS_MAP = {
