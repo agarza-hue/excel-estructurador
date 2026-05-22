@@ -85,6 +85,11 @@ cd backend && . .venv/bin/activate && python -m pytest -q
 - El archivo subido se manda una sola vez (`/upload/analyze` devuelve `upload_id`);
   los pasos siguientes referencian ese id en lugar de reenviar el workbook.
 
+## Contribuir
+
+Las contribuciones son bienvenidas — revisa [CONTRIBUTING.md](CONTRIBUTING.md)
+para setup local, los checks de CI y las convenciones.
+
 ## Licencia
 
 [MIT](LICENSE) © adgarzasa
