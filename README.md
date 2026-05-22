@@ -2,6 +2,7 @@
 
 [![backend-tests](https://github.com/agarza-hue/excel-estructurador/actions/workflows/backend-tests.yml/badge.svg)](https://github.com/agarza-hue/excel-estructurador/actions/workflows/backend-tests.yml)
 [![frontend-build](https://github.com/agarza-hue/excel-estructurador/actions/workflows/frontend-build.yml/badge.svg)](https://github.com/agarza-hue/excel-estructurador/actions/workflows/frontend-build.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 App web self-hosted para convertir Exceles desordenados en datos estructurados.
 Un usuario no técnico sube cualquier Excel, ve cómo quedó parseado, corrige el
