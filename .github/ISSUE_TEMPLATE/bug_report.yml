@@ -1,0 +1,58 @@
+name: Bug report
+description: Report something that isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please fill in the sections below so we can
+        reproduce the problem quickly.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the app is affected?
+      options:
+        - Backend (API / ingestion / DuckDB)
+        - Frontend (UI / wizard / explorer)
+        - Excel parsing (structure / type detection)
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see vs. what you expected.
+      placeholder: When I import a workbook with merged headers, the rows come in shifted by one...
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps. For parsing bugs, attach a small sample workbook (sensitive data removed).
+      placeholder: |
+        1. Go to /upload
+        2. Upload the attached file
+        3. Map column X to field Y
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Backend traceback, browser console errors, or screenshots if relevant.
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Commit / version
+      description: Output of `git rev-parse --short HEAD`, if known.
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Python version, Node version, browser.
+      placeholder: Ubuntu 24.04 · Python 3.12.3 · Node 22 · Chrome 124
