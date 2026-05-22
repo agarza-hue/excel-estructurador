@@ -1,0 +1,25 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# App data (DuckDB file, raw Parquet, uploads, schema)
+backend/data/db/
+backend/data/raw/
+backend/data/uploads/
+backend/data/schema.json
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Codex sandbox artifacts
+frontend/.codex/
+frontend/.agents/
+
+# Env
+.env
+
+# TS incremental build cache
+frontend/*.tsbuildinfo
