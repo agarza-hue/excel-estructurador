@@ -86,4 +86,4 @@ cd backend && . .venv/bin/activate && python -m pytest -q
 
 ## Licencia
 
-[MIT](LICENSE) © agarza-hue
+[MIT](LICENSE) © adgarzasa
